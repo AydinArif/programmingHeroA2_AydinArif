@@ -271,3 +271,79 @@ body {
     text-transform: uppercase;
     opacity: 80%;
 }
+
+/* Why choose banner styles */
+
+.why-choose {
+    background-color: #230E3D;
+    padding: 100px 0;
+    width: 100%;
+}
+
+.why-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.why-title {
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 24px;
+}
+
+.card-tall, .card-wide, .card-long, .card-small {
+    background: #351165;
+    padding: 40px;
+    border-radius: 40px;
+    color: white;
+}
+
+.card-tall img, .card-wide img, .card-long img, .card-small img {
+    width: 44px;
+    margin-bottom: 16px;
+}
+
+.card-tall h3, .card-wide h3, .card-long h3, .card-small h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.card-tall p, .card-wide p, .card-long p, .card-small p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 60%;
+}
+
+.card-tall {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.card-wide {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+
+.card-long {
+    grid-column: span 2;
+}
+
+.card-small {
+    grid-column: span 1;
+}
