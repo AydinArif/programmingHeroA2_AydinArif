@@ -553,3 +553,58 @@ body {
     font-size: 14px;
     opacity: 0.6;
 }
+
+/* Responsiveness */
+
+@media (max-width: 992px) {
+    .episodes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .host-card {
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .footer-logo h2 {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 576px) {
+    .episodes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .host-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .episodes-title, 
+    .host-title, 
+    .footer-logo h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .host-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .social-links, 
+    .footer-platforms {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        background-size: 250% auto;
+        padding: 60px 0;
+    }
+}
+
+/* My responsiveness is not really good  */
